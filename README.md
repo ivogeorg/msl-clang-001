@@ -16,5 +16,5 @@ _note: the CMakeLists.txt has a hardcoded library name and location assuming an 
 2. Learn direct control over memory allocation and deallocation.
 3. Learn to create and manipulate data structures (arrays and `struct`s).
 4. Learn to write algorithms for these data structures.
-5. Prepare for C2.
+5. Prepare for [C2](https://github.com/ivogeorg/msl-clang-002).
 6. Develop good coding style.
