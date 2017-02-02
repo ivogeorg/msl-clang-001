@@ -76,12 +76,14 @@ years: 23
 
 You should use a binary tree to keep the running count for words and keep them in alphabetical order. This means that if you have four words, say *one, two, three, go, one*, that come in this order, you will end up with a tree that looks like:
 
+```
     one(2)
   /     \
  go(1)  two(1)
         /
      three(1)
-   
+```
+
 Think what traversal you need to print the words in the tree in alphabetical order.
 
 The tree has to be a *self-referential* C `struct`, containing a dynamically allocated `word`, its integer `count`, and pointers to the `left` and `right` subtrees. In other words, a tree is equivalent to a single node of the tree.
