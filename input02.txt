@@ -1,0 +1,1 @@
+a very simple input file for you to test your code it really does not matter how big the file is as long as it is not too big to fit in memory your code should work with any size that fits so do not try to read the whole file in one gulp
