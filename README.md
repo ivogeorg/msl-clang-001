@@ -60,6 +60,31 @@ Two guides for implementation of `malloc()`: [here](http://danluu.com/malloc-tut
 
 #### Input
 
-The input will be a file containing a single line (i.e. no new lines) of all-lower-case English words. You need to read it in to sort them. The file will be in the same directory as your executable and will appear as the first argument when your program is run.
+The input will be a file containing a single line (i.e. no new lines) of all-lower-case English words. You need to read it in to sort them. The file will be in the same directory as your executable and will appear as the first argument when your program is run. To test input files are provided for you. A much larger file will be used in addition to test your program.
 
+#### Output
+
+For each input file `input01.txt`, generate an output file in the same directory, called `myoutput01.txt`. Use the provided `output01.file` to compare against. The output should be an alphabetized list of unique words and their counts in the file, as follows:
+
+```
+one: 4
+three: 5
+years: 23
+```
+
+#### Data structures
+
+You should use a binary tree to keep the running count for words and keep them in alphabetical order. This means that if you have four words, say *one, two, three, go, one*, that come in this order, you will end up with a tree that looks like:
+
+    one(2)
+  /     \
+ go(1)  two(1)
+        /
+     three(1)
+   
+Think what traversal you need to print the words in the tree in alphabetical order.
+
+The tree has to be a *self-referential* C `struct`, containing a dynamically allocated `word`, its integer `count`, and pointers to the `left` and `right` subtrees. In other words, a tree is equivalent to a single node of the tree.
+
+#### Functionality
 
