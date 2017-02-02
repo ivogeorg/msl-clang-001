@@ -90,3 +90,11 @@ The tree has to be a *self-referential* C `struct`, containing a dynamically all
 
 #### Functionality
 
+1. Read words from the file. Don't read in the whole file and then process it. Read it in chunks using a buffer.
+2. Tree lookup for the next word in the input. 
+3. If a word is in the tree, increment the count; if it isn't, dynamically allocate a new node; position and link it properly, and initialize the count to 1.
+4. When you are done with the input, you should have a complete tree. Use it to print out the output file.
+5. Destroy the tree, making sure you `free()` dynamic structures in the proper order.
+6. Your tree functions should be *recursive*.
+
+3. 
