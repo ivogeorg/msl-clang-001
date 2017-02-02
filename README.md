@@ -97,4 +97,7 @@ The tree has to be a *self-referential* C `struct`, containing a dynamically all
 5. Destroy the tree, making sure you `free()` dynamic structures in the proper order.
 6. Your tree functions should be *recursive*.
 
-3. 
+#### README
+
+Overwrite the **README.md** file and describe your project (approach, data structures, algorithms, etc.). Use this opportunity to get to know *markdown*. It's a useful skill.
+
