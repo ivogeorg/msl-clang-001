@@ -22,7 +22,7 @@ This is a warmup assignment, meant to give you a problem which involves major fe
 
 You need to fork this repository and `git clone` it to your development machines. When you are done and your code works, `git commit` all your changes and `git push` to your forked (aka **remote** repository. Work in the **master** branch. This assignment will not have a test suite like the following ones, so you don't have to install [cmocka](https://cmocka.org/). Your output will only be compared to the correct output.
 
-Submissions are **one** per team. If you haven't done so, create a git account for your team. The name should look like **msl-os-[color]-[school]-[term]**. For example, **msl-os-orange-msud-s17** or **msl-os-black-ucd**. (If you want, you can create an [organization](https://github.com/blog/674-introducing-organizations) but that might be overkill.) Make all team submissions from this account. 
+Submissions are **one** per team. If you haven't done so, create a git account for your team. The name should look like **msl-os-[color]-[school]-[term]**. For example, **msl-os-orange-msud-s17** or **msl-os-black-ucd-s17**. (If you want, you can create an [organization](https://github.com/blog/674-introducing-organizations) but that might be overkill.) Make all team submissions from this account. 
 
 ### Grading
 
