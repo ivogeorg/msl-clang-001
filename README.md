@@ -36,8 +36,6 @@ The assignment is due on **Mon, Feb 6, at 23:59 Mountain time**. The last commit
 
 Free Github repositories are public so you can look at each other's code. Please, don't do that. You can discuss any programming topics and the assignments in general but sharing of solutions diminishes the individual learning experience of many people. Assignments might be randomly checked for plagiarism and a plagiarism claim may be raised against you.
 
-Note that PA1 one is an _individual_ assignment, not a _team_ assignment like the upcoming Pintos assignments.
-
 ### Use of libraries
 
 For this assignment, no external libraries should be used, except for the ANSI C Standard Library. The implementation of the data structures should be your own. We will use library implementations of data structures and programming primitives in the Pintos assignments.
