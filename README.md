@@ -1,10 +1,10 @@
-## Operating Systems Concepts: Programming Assignment C1
+# C Programming Assignment 1
 
 _data structures and pointers in the C language_
 
 * * * 
 
-### Goals
+## Goals
 
 1. Learn to work with [Git](https://git-scm.com/) and [Github](https://github.com).
 2. Practice development in the C programming language.
@@ -15,37 +15,37 @@ _data structures and pointers in the C language_
 7. Prepare for [C2](https://github.com/ivogeorg/msl-clang-002).
 8. Develop good coding style.
 
-### Synopsis
+## Synopsis
 
 This is a warmup assignment, meant to give you a problem which involves important features of the C language (pointers, dynamic memory allocation with `malloc` and deallocation with `free`, `struct` data structures), but is not in itself hard conceptually. You need to read in a file with English words and output a file where the words are counted and sorted. You are required to use a _balanced binary tree_ as the fundamental structure.
 
-### Submission
+## Submission
 
 You need to fork this repository and `git clone` it to your development environment. When you are done and your code works, `git commit` all your changes and `git push` to your forked (aka **remote**) repository. Work in the **master** branch. This assignment will not have a test suite like the following ones, so you don't have to install [cmocka](https://cmocka.org/). Your output will only be compared to the correct output.
 
 Submissions are **one** per team. If you haven't done so, create a git account for your team. The name should look like **ucd-[course]-[team-color]-s18**. For example, **ucd-os-orange-s18** or **ucd-unix-black-s18**. (If you want, you can create an [organization](https://github.com/blog/674-introducing-organizations) but that might be overkill.) Make all team submissions from this account. 
 
-### Grading
+## Grading
 
 This assignment is pass/fail and carries no score. However, you will need your work on this assignment for the next one. Note that good coding style will be important for further assignments so use this opportunity to develop it.
 
-### Due date
+## Due date
 
 The assignment is due on **Sun, Jan 21, at 23:59 Mountain time**. The last commit to your repository before the deadline will be evaluated.
 
-### Honor code
+## Honor code
 
 Free Github repositories are public so you can look at each other's code. Please, don't do that. You can discuss any programming topics and the assignments in general but sharing of solutions diminishes the individual learning experience of many people. Assignments might be randomly checked for plagiarism and a plagiarism claim may be raised against you. You definitely don't want that.
 
-### Use of libraries
+## Use of libraries
 
 For this assignment, no external libraries should be used, except for the ANSI C Standard Library. The implementation of the data structures should be your own. We will use library implementations of data structures and programming primitives in the Pintos assignments.
 
-### Coding style
+## Coding style
 
 Familiarize yourself with and start the following [coding style guide](http://courses.cms.caltech.edu/cs11/material/c/mike/misc/c_style_guide.html). While you are not expected to follow every point of it, you should try to follow it enought to get a feel for what is good style and bad style. C code can quickly become [unreadable](http://www.ioccc.org/) and difficult to maintain.
 
-### References
+## References
 
 The [C Reference](http://en.cppreference.com/w/c), which you should get confortable consulting.
 
@@ -55,13 +55,13 @@ This [C98 Library Reference](https://www-s.acm.illinois.edu/webmonkeys/book/c_gu
 
 Two guides for implementation of `malloc()`: [here](http://danluu.com/malloc-tutorial/) and [here](http://www.inf.udec.cl/~leo/Malloc_tutorial.pdf).
 
-### Detailed Instructions
+## Detailed Instructions
 
-#### Input
+### Input
 
 The input will be a file containing a single line (i.e. no new lines) of all-lower-case English words. You need to read it in to sort them. The file will be in the same directory as your executable and will appear as the first argument when your program is run. To test input files are provided for you. A much larger file will be used in addition to test your program.
 
-#### Output
+### Output
 
 For each input file `input01.txt`, generate an output file in the same directory, called `myoutput01.txt`. Use the provided `output01.file` to compare against. The output should be an alphabetized list of unique words and their counts in the file, as follows:
 
@@ -71,7 +71,7 @@ three: 5
 years: 23
 ```
 
-#### Data structures
+### Data structures
 
 You should use a binary tree to keep the running count for words and keep them in alphabetical order. This means that if you have four words, say *one, two, three, go, one*, that come in this order, you will end up with a tree that looks like:
 
@@ -87,7 +87,7 @@ Think what traversal you need to print the words in the tree in alphabetical ord
 
 The tree has to be a *self-referential* C `struct`, containing a dynamically allocated `word`, its integer `count`, and pointers to the `left` and `right` subtrees. In other words, a tree is equivalent to a single node of the tree.
 
-#### Functionality
+### Functionality
 
 1. Read words from the file. Don't read in the whole file and then process it. Read it in chunks using a buffer.
 2. Tree lookup for the next word in the input. 
@@ -96,7 +96,6 @@ The tree has to be a *self-referential* C `struct`, containing a dynamically all
 5. Destroy the tree, making sure you `free()` dynamic structures in the proper order.
 6. Your tree functions should be *recursive*.
 
-#### README
+### README
 
 Overwrite the **README.md** file and describe your project (approach, data structures, algorithms, etc.). Use this opportunity to get to know [*markdown*](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). It's a useful skill.
-
