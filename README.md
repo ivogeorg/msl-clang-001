@@ -23,11 +23,22 @@ This is a warmup assignment, meant to give you a problem which involves importan
 
 You need to fork this repository and `git clone` it to your development environment. When you are done and your code works, `git commit` all your changes and `git push` to your forked (aka **remote**) repository. Work in the **master** branch. This assignment will not have a test suite like the following ones, so you don't have to install [cmocka](https://cmocka.org/). Your output will only be compared to the correct output.
 
+### Github
 Submissions are **one** per team. If you haven't done so, create a git account for your team. The name should look like **ucd-[course]-[team-color]-s18**. For example, **ucd-os-orange-s18** or **ucd-unix-black-s18**. (If you want, you can create an [organization](https://github.com/blog/674-introducing-organizations) but that might be overkill.) Make all team submissions from this account. 
+
+### Canvas
+Both team members have to make an assignment submission on [Canvas](https://canvas.instructure.com/courses/1270192) before the deadline. You only need to enter the _clone URL_ of your project repository (e.g. https://github.com/ivogeorg/msl-clang-001.git).
 
 ## Grading
 
-This assignment is pass/fail and carries no score. However, you will need your work on this assignment for the next one. Note that good coding style will be important for further assignments so use this opportunity to develop it.
+### Points
+50
+
+### Details
+This assignment has no test suite, so your grade is at the discretion of the instructor. Criteria:
+1. Correctness
+2. Performance
+3. Style
 
 ## Due date
 
