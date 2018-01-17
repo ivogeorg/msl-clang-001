@@ -6,35 +6,36 @@ _data structures and pointers in the C language_
 
 ### Goals
 
-1. Practice development in the C programming language.
-2. Practice explicit memory allocation and deallocation.
-3. Practice creating and manipulate data structures (arrays and `struct`s).
-4. Practice working with pointers.
-4. Practice writing algorithms for these data structures.
-5. Prepare for [C2](https://github.com/ivogeorg/msl-clang-002).
-6. Develop good coding style.
+1. Learn to work with [Git](https://git-scm.com/) and [Github](https://github.com).
+2. Practice development in the C programming language.
+3. Practice explicit memory allocation and deallocation.
+4. Practice working with _pointers_, raw references to memory locations, usually dynamically allocated.
+5. Practice creating and manipulating data structures (arrays and `struct`s).
+6. Practice writing algorithms for these data structures.
+7. Prepare for [C2](https://github.com/ivogeorg/msl-clang-002).
+8. Develop good coding style.
 
 ### Synopsis
 
-This is a warmup assignment, meant to give you a problem which involves major features of the C language but is not hard in itself. You need to read in a file with English words and output a file where the words are counted and sorted. You need to use a binary tree as the fundamental structure.
+This is a warmup assignment, meant to give you a problem which involves important features of the C language (pointers, dynamic memory allocation with `malloc` and deallocation with `free`, `struct` data structures), but is not in itself hard conceptually. You need to read in a file with English words and output a file where the words are counted and sorted. You are required to use a _balanced binary tree_ as the fundamental structure.
 
 ### Submission
 
-You need to fork this repository and `git clone` it to your development machines. When you are done and your code works, `git commit` all your changes and `git push` to your forked (aka **remote** repository. Work in the **master** branch. This assignment will not have a test suite like the following ones, so you don't have to install [cmocka](https://cmocka.org/). Your output will only be compared to the correct output.
+You need to fork this repository and `git clone` it to your development environment. When you are done and your code works, `git commit` all your changes and `git push` to your forked (aka **remote**) repository. Work in the **master** branch. This assignment will not have a test suite like the following ones, so you don't have to install [cmocka](https://cmocka.org/). Your output will only be compared to the correct output.
 
-Submissions are **one** per team. If you haven't done so, create a git account for your team. The name should look like **msl-os-[color]-[school]-[term]**. For example, **msl-os-orange-msud-s17** or **msl-os-black-ucd-s17**. (If you want, you can create an [organization](https://github.com/blog/674-introducing-organizations) but that might be overkill.) Make all team submissions from this account. 
+Submissions are **one** per team. If you haven't done so, create a git account for your team. The name should look like **ucd-[course]-[team-color]-s18**. For example, **ucd-os-orange-s18** or **ucd-unix-black-s18**. (If you want, you can create an [organization](https://github.com/blog/674-introducing-organizations) but that might be overkill.) Make all team submissions from this account. 
 
 ### Grading
 
-This assignment is pass/fail and carries no score. Note that good coding style will be important for further assignments so use this opportunity to develop it.
+This assignment is pass/fail and carries no score. However, you will need your work on this assignment for the next one. Note that good coding style will be important for further assignments so use this opportunity to develop it.
 
 ### Due date
 
-The assignment is due on **Mon, Feb 6, at 23:59 Mountain time**. The last commit to your repository before the deadline will be graded.
+The assignment is due on **Sun, Jan 21, at 23:59 Mountain time**. The last commit to your repository before the deadline will be evaluated.
 
 ### Honor code
 
-Free Github repositories are public so you can look at each other's code. Please, don't do that. You can discuss any programming topics and the assignments in general but sharing of solutions diminishes the individual learning experience of many people. Assignments might be randomly checked for plagiarism and a plagiarism claim may be raised against you.
+Free Github repositories are public so you can look at each other's code. Please, don't do that. You can discuss any programming topics and the assignments in general but sharing of solutions diminishes the individual learning experience of many people. Assignments might be randomly checked for plagiarism and a plagiarism claim may be raised against you. You definitely don't want that.
 
 ### Use of libraries
 
@@ -46,11 +47,11 @@ Familiarize yourself with and start the following [coding style guide](http://co
 
 ### References
 
-A minimal [C Reference](https://cs50.harvard.edu/resources/cppreference.com/), which should be sufficient for your needs.
+The [C Reference](http://en.cppreference.com/w/c), which you should get confortable consulting.
 
-The [C98 Library Reference](https://www-s.acm.illinois.edu/webmonkeys/book/c_guide/) is more complete.
+The [ISO C Standards](http://www.iso-9899.info/wiki/The_Standard) defines the language. A freely available draft [C11 Standard](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf), if you want to dig deep.
 
-The [C11 Standard](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf) is just provided for completeness, and you shouldn't need to read it, except peruse it out of curiosity.
+This [C98 Library Reference](https://www-s.acm.illinois.edu/webmonkeys/book/c_guide/) seems to be the standard reference. You should not expect many changes, though it's always good to work off a latest copy of your library reference, which should be available through the vendor/implementor.
 
 Two guides for implementation of `malloc()`: [here](http://danluu.com/malloc-tutorial/) and [here](http://www.inf.udec.cl/~leo/Malloc_tutorial.pdf).
 
@@ -97,5 +98,5 @@ The tree has to be a *self-referential* C `struct`, containing a dynamically all
 
 #### README
 
-Overwrite the **README.md** file and describe your project (approach, data structures, algorithms, etc.). Use this opportunity to get to know *markdown*. It's a useful skill.
+Overwrite the **README.md** file and describe your project (approach, data structures, algorithms, etc.). Use this opportunity to get to know [*markdown*](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). It's a useful skill.
 
