@@ -17,7 +17,7 @@ _data structures and pointers in the C language_
 
 ## Synopsis
 
-This is a warmup assignment, meant to give you a problem which involves important features of the C language (pointers, dynamic memory allocation with `malloc` and deallocation with `free`, `struct` data structures), but is not in itself hard conceptually. You need to read in a file with English words and output a file where the words are counted and sorted. You are required to use a _balanced binary tree_ as the fundamental structure.
+This is a warmup assignment, meant to give you a problem which involves important features of the C language (pointers, dynamic memory allocation with `malloc` and deallocation with `free`, `struct` data structures), but is not in itself hard conceptually. You need to read in a file with English words and output a file where the words are counted and sorted. You are required to use _an unbalanced binary tree_ as the fundamental structure.
 
 ## Submission
 
